@@ -1,0 +1,952 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: rgb(24, 24, 24);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*NAVIGATION BARRRRR */
+.navigation-header {
+  background-color: transparent;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+/*BIG CELL */
+.logo-section {
+  padding: 40px;
+  border-right: 1px solid white;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-text h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.logo-text p {
+  color: white;
+  font-size: 12px;
+  margin-top: 2px;
+  font-weight: 400;
+  position: absolute;
+  top: 40px;
+  left: 230px;
+  width: 150px;
+}
+
+/*END OF BIG CELL */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 100px;
+  height: 50%;
+}
+
+.nav-row:first-child {
+  border-bottom: 1px solid white;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-right: 1px solid white;
+  overflow: hidden;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-row:last-child {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*SECTION ONEEE */
+.Hello {
+  height: auto;
+  width: auto;
+  background: linear-gradient(160deg, #8a2be2 0%, #4b0082 25%, rgba(255, 20, 145, 0.8352941176) 50%, #000041 75%, black 100%);
+}
+
+.HelloContainer,
+.BottomContainer {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 4%;
+}
+
+.greeting {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.greeting p,
+.greeting h4 {
+  background: linear-gradient(to right, rgb(255, 227, 253), rgb(253, 0, 190));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.greeting h4 {
+  font-size: 35px;
+}
+
+.greeting p {
+  font-size: 15px;
+  font-weight: 600;
+  width: 90px;
+}
+
+/*LARGE TEXT IN SECTION 1 */
+.txt {
+  margin: 60px 0 120px;
+}
+
+.txt h1 {
+  font-size: 55px;
+  padding-top: 5px;
+  background: linear-gradient(to right, rgb(255, 227, 253), rgb(253, 0, 190));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.txt p {
+  font-size: 20px;
+  background: linear-gradient(to right, rgb(255, 227, 253), rgb(253, 0, 190));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-left: 40px;
+}
+
+.right_message {
+  width: 400px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-top: -100px;
+}
+
+.right_message p {
+  bottom: 0;
+  font-size: 15px;
+  background: linear-gradient(to right, rgb(255, 227, 253), rgb(253, 0, 190));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.right_message_icon {
+  margin-left: 40px;
+}
+
+/*OVERLAYYYYY */
+.overlay {
+  width: 100%;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+.overlay p {
+  background: linear-gradient(to right, rgb(255, 227, 253), rgb(253, 0, 190));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 20px;
+}
+
+.overlay .overlay_item {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay_item::after {
+  position: absolute;
+  top: 30px;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: white;
+}
+
+/*SECTION TWO */
+.sectionTwo {
+  width: auto;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+.SecondContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sectionTwo_head {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 90%;
+}
+
+.sectionTwo_head .left {
+  display: flex;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.sectionTwo_head .left p {
+  background: linear-gradient(to right, rgb(255, 227, 253), rgb(253, 0, 190));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.sectionTwo_head .right p {
+  margin-bottom: 10px;
+}
+
+.midSection {
+  margin-top: 50px;
+  position: relative;
+}
+
+.midSection .midSectiontxt h1 {
+  font-size: 60px;
+  width: 550px;
+  font-weight: 400;
+  background: linear-gradient(to right, rgb(255, 227, 253), rgb(253, 0, 190));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.midSection .midSectiontxt h1::after {
+  position: absolute;
+  bottom: 0px;
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(to right, white, rgb(2, 40, 255));
+}
+
+.card {
+  position: absolute;
+  background-color: rgb(36, 36, 36);
+  right: 0px;
+  top: 0;
+  width: 240px;
+  height: 300px;
+}
+
+.card .ball {
+  width: 100px;
+  height: 100px;
+  margin: 70px 0 0 70px;
+  border-radius: 50%;
+  position: relative;
+  background: radial-gradient(circle at 50% 120%, blue 20%, silver 60%, rgba(255, 1, 221, 0.7882352941) 80%, #1100ff 100%);
+}
+
+.card p {
+  margin: 30px 0 0 80px;
+}
+
+.midSectionMore {
+  margin-top: 60px;
+  display: grid;
+  width: 65%;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.midSectionMore p {
+  grid-column: 2/3;
+}
+
+.midSectionMore .markup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*END OF SECTION 2 */
+/*SECTION 3 */
+.sectionThree {
+  width: auto;
+  height: auto;
+  margin: 60px 0;
+}
+
+.container_box {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.container_box .box-cell {
+  padding: 50px;
+  width: 100%;
+}
+
+.container_box .box-cell h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.container_box .box-cell p {
+  font-size: 14px;
+  width: 60%;
+}
+
+.box-cell.one {
+  background: linear-gradient(230deg, #8a2be2 0%, #4b0082 25%, rgba(255, 20, 145, 0.8980392157) 50%, #000041 75%, black 100%);
+}
+
+.box-cell.two {
+  background: linear-gradient(250deg, #8a2be2 0%, #4b0082 25%, rgba(255, 20, 145, 0.8549019608) 50%, #000041 75%, black 100%);
+}
+
+.box-cell.three {
+  background: linear-gradient(280deg, #8a2be2 0%, #4b0082 25%, rgba(255, 20, 145, 0.8274509804) 50%, #000041 75%, black 100%);
+}
+
+.box-cell.four {
+  background: linear-gradient(160deg, #8a2be2 0%, #4b0082 25%, rgba(255, 20, 145, 0.8156862745) 50%, #000041 75%, black 100%);
+}
+
+/*END OF SECTION 3 */
+.Us {
+  width: auto;
+  height: auto;
+  margin: 100px 0;
+}
+
+.idek {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.whatever1 {
+  margin-bottom: 50px;
+}
+
+.whatever1 h1 {
+  font-size: 60px;
+  max-width: 700px;
+  font-weight: 400;
+  background: linear-gradient(to right, rgb(255, 227, 253), rgb(173, 0, 253));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.whatever1 h1::before {
+  position: absolute;
+  top: -5px;
+  left: 450px;
+  content: "";
+  display: block;
+  width: 160px;
+  height: 2px;
+  background: linear-gradient(to right, white, rgb(255, 2, 179));
+}
+
+.whatever2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 2fr 1fr 1fr;
+  margin-bottom: 50px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  font-size: 15px;
+}
+
+.whatever2 .lefttxt p {
+  background: linear-gradient(to right, rgb(255, 177, 238), rgb(143, 0, 107));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.whatever2 .midtext p,
+.whatever2 .righttxt p {
+  margin-bottom: 20px;
+}
+
+.whatever2 .midtext p {
+  width: 90%;
+}
+
+.whatever3 {
+  width: 90%;
+}
+
+.whatever3 .servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  grid-template-rows: 150px 220px;
+  width: 65%;
+  margin-left: auto;
+}
+
+.whatever3 .GridCells {
+  border: 1px solid white;
+  padding: 8%;
+  text-align: center;
+}
+
+.whatever3 .GridCells h1 {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  margin: 25px 0;
+  background: linear-gradient(to right, white, rgb(255, 75, 210), purple);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.whatever3 .GridCells p {
+  font-size: 14px;
+}
+
+.whatever3 .GridCells .circle1,
+.whatever3 .GridCells .circle2,
+.whatever3 .GridCells .circle3,
+.whatever3 .GridCells .circle4,
+.whatever3 .GridCells .circle5,
+.whatever3 .GridCells .circle6 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 8%;
+}
+
+.whatever3 .GridCells .circle1 {
+  background: radial-gradient(circle at 50% 120%, rgb(98, 0, 255) 20%, silver 60%, rgba(1, 111, 255, 0.7882352941) 80%, #00ff88 100%);
+}
+
+.whatever3 .GridCells .circle2 {
+  background: radial-gradient(circle at 50% 120%, rgb(255, 0, 157) 20%, silver 60%, rgba(1, 120, 255, 0.7882352941) 80%, rgba(227, 255, 149, 0.768627451) 100%);
+}
+
+.whatever3 .GridCells .circle3 {
+  background: radial-gradient(circle at 50% 120%, rgb(122, 122, 253) 20%, silver 60%, rgba(1, 255, 179, 0.7882352941) 80%, #b700ff 100%);
+}
+
+.whatever3 .GridCells .circle4 {
+  background: radial-gradient(circle at 50% 120%, blue 20%, silver 60%, rgba(255, 153, 1, 0.7882352941) 80%, #00ffb3 100%);
+}
+
+.whatever3 .GridCells .circle5 {
+  background: radial-gradient(circle at 50% 120%, rgb(110, 110, 255) 20%, silver 60%, rgba(255, 105, 235, 0.7882352941) 80%, #00b7ff 100%);
+}
+
+.whatever3 .GridCells .circle6 {
+  background: radial-gradient(circle at 50% 130%, rgb(97, 0, 49) 20%, silver 60%, rgba(125, 0, 184, 0.7882352941) 80%, #36f2ff 100%);
+}
+
+.whatever4 {
+  margin-top: 60px;
+  display: grid;
+  width: 65%;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.whatever4 p {
+  grid-column: 2/3;
+  font-size: 16px;
+}
+
+.whatever4 .markup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*END OF SECTION 4 */
+/*SECTION 5 START */
+.GradientSection {
+  max-height: 90vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(140deg, #8a2be2 0%, #4b0082 25%, rgba(192, 192, 192, 0.521) 50%, rgba(255, 20, 145, 0.8352941176) 75%, black 95%);
+}
+
+.Sunsetz {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2% 0 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+.Sunsetz h1,
+.Sunsetz p {
+  background: linear-gradient(to right, white, rgb(255, 75, 210), rgb(124, 126, 255));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.Sunsetz .msg p {
+  margin: 0;
+  padding-top:2rem ;
+  width: 100px;
+}
+
+.Sunsetz .HugeTxt {
+  display: flex;
+  flex-direction: row;
+  gap: 35%;
+}
+
+.Sunsetz h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.Sunsetz p {
+  width: 50%;
+  font-size: 1rem;
+}
+
+/*END OF SECTION 5 */
+/*SECTION SIX START */
+.SweaterWeather {
+  width: 100%;
+  max-height: 80vh;
+  margin: 50px 0;
+}
+
+.SweaterWeather .sweaterTxt {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 2fr 1fr 1fr;
+  margin-bottom: 50px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  font-size: 15px;
+}
+
+.SweaterWeather .midtext p,
+.SweaterWeather .righttxt p {
+  margin-bottom: 20px;
+}
+
+.SweaterWeather .midtext p {
+  width: 90%;
+}
+
+.SweaterWeather .icon {
+  display: flex;
+  align-items: center;
+}
+
+/*END OF SECTION 6 */
+/*BOTTOM NAV */
+.BottomContainer {
+  margin-bottom: 50px;
+}
+
+.navigation-bottom a,
+.navigation-bottom h1,
+.navigation-bottom p,
+.navigation-bottom span {
+  background: linear-gradient(to right, white, rgb(255, 75, 210), rgb(124, 126, 255));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.navigation-bottom .nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-text-fill-color: white;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  body{
+    width: 100%;
+  }
+  .HelloContainer,
+  .SecondContainer,
+  .idek,
+  .Sunsetz,
+  .SweaterWeather ,
+  .container_box {
+    width: 95%;
+  }
+  .nav-container {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-section {
+    border-right: none;
+    border-bottom: 1px solid white;
+    justify-content: center;
+  }
+
+  .logo-text p {
+    position: static;
+    width: auto;
+    text-align: start;
+    margin-top: 5px;
+    left: auto;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+  }
+
+  .nav-row {
+    display: none;
+  }
+
+  /* Section One */
+  .HelloContainer {
+    width: 95%;
+    padding-top: 2%;
+  }
+
+  .greeting {
+    margin: 60px 20px;
+    text-align: end;
+  }
+
+  .greeting h4 {
+    font-size: 30px;
+  }
+
+  .greeting p {
+    width: 200px;
+    text-align: right;
+    font-size: 16px;
+  }
+
+  .txt {
+    width: 95%;
+    margin: 30px auto 80px;
+    text-align: start;
+  }
+
+  .txt h1 {
+    font-size: 50px;
+    width: 90%;
+    padding-top: 10px;
+  }
+
+  .txt p {
+    position: static;
+    width: 50%;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .right_message {
+    position: static;
+    width: 90%;
+    margin: 50px 0 0;
+    text-align: start;
+    font-size: 20px;
+  }
+
+  .right_message_icon {
+    margin-left: 0;
+  }
+
+  .overlay {
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 0;
+  }
+  .overlay p {
+    font-size: 16px;
+  }
+  .overlay_item {
+    padding: 10px 0;
+  }
+
+  .overlay_item::after {
+    width: 100px;
+    top: auto;
+    bottom: 0;
+  }
+
+  /* Section Two */
+  .sectionTwo {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .sectionTwo_head {
+    grid-template-columns: 1fr;
+    width: 95%;
+    padding-top: 30px;
+    text-align: start;
+  }
+
+  .sectionTwo_head .left {
+    margin-bottom: 20px;
+    justify-content: start;
+  }
+
+  .midSection {
+    margin-top: 30px;
+    text-align: start;
+  }
+
+  .midSection .midSectiontxt h1 {
+    font-size: 45px;
+    width: 80%;
+    margin: 60px 0 50px;
+  }
+
+  .midSection .midSectiontxt h1::after {
+    width: 120px;
+    bottom: -10px;
+    left:2% ;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .midSectionMore {
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr;
+    width: 95%;
+    margin: 30px auto;
+    text-align: start;
+  }
+
+  .midSectionMore p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .midSectionMore .markup {
+    margin-bottom: 20px;
+    grid-row: 1/3;
+    display: flex;
+    align-items: start;
+  }
+
+  /* Section Three */
+  .container_box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .container_box .box-cell {
+    padding: 30px;
+    text-align: start;
+  }
+
+  .container_box .box-cell p {
+    width: 90%;
+    margin: 0;
+  }
+
+  /* Section Four */
+  .Us {
+    margin: 50px 0;
+  }
+
+  .whatever1 {
+    margin-bottom: 30px;
+    width: 80%;
+    text-align: start;
+  }
+
+  .whatever1 h1 {
+    font-size: 50px;
+    max-width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .whatever1 h1::before {
+    width: 220px;
+    left: 2%;
+    top: auto;
+    bottom: -10px;
+  }
+
+  .whatever2 {
+    width: 95%;
+    margin: 0 auto 40px;
+    text-align: start;
+    display: block;
+  }
+
+  .midtext {
+    display: none;
+  }
+
+  .whatever2 .righttxt p,
+  .lefttxt {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .whatever3 .servicesGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 98%;
+    margin-left: 20px;
+  }
+  .whatever3 .GridCells h1{
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .whatever3 .GridCells p {
+    margin: 0 auto 10px;
+    text-align: start;
+    font-size: 12px;
+  }
+
+  .whatever4 {
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr;
+    width: 95%;
+    margin: 30px auto;
+    text-align: start;
+  }
+
+  .whatever4 p {
+    grid-column: auto;
+  }
+
+  .whatever4 .markup {
+    margin-bottom: 20px;
+  }
+
+  /* Section Five */
+  .GradientSection {
+    min-height: auto;
+    padding: 50px 40px;
+    background: linear-gradient(120deg, #8a2be2 0%, #4b0082 25%, rgba(85, 73, 255, 0.6352941176) 50%, rgba(255, 20, 145, 0.8352941176) 75%, black 100%);
+  }
+
+  .Sunsetz {
+    gap: 50px;
+    text-align: start;
+  }
+
+  .Sunsetz .msg p {
+    width: 80px;
+  }
+
+  .Sunsetz .HugeTxt {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Sunsetz h1 {
+    font-size: 50px;
+  }
+
+  .Sunsetz p {
+    font-size: 15px;
+    width: 75%;
+  }
+
+  /* Section Six */
+  .SweaterWeather {
+    max-height: none;
+    margin: 30px 0;
+  }
+
+  .SweaterWeather .sweaterTxt {
+    grid-template-columns: 50px 1fr;
+    margin-bottom: 30px;
+    text-align: start;
+  }
+
+  .SweaterWeather .midtext p,
+  .SweaterWeather .righttxt p {
+    width: 95%;
+  }
+
+  .SweaterWeather .icon {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
